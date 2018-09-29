@@ -8,7 +8,7 @@ Allows you to create borders which do not affect the layout of the document.
 
 ```pcss
 .example {
-  border: outside 2px solid red;
+  border: inside 2px solid red;
 }
 ```
 
