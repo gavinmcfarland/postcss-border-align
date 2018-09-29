@@ -1,8 +1,9 @@
 .example-inside {
   border: inside 1.5px solid red;
-  border-top-color: green;
+  border-top-color: black;
   border-bottom-color: blue;
   padding: 20px;
   border-radius: 4px;
   font-family: sans-serif;
+  box-shadow: 0 0 10px 10px green;
 }
