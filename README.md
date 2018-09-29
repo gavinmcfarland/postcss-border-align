@@ -16,12 +16,17 @@ Outputs:
 
 ```css
 .example {
-  box-shadow: inset 0 2px 0 0 red, inset -2px 0 0 0 red, inset 0 -2px 0 0 red, inset 2px 0 0 0 red;
+  box-shadow: inset 0 0 0 2px red;
 }
 ```
 
-Currently the plugin accepts `inside` and `outside` and only works with solid borders. There are some issues with outside where corners are not connected.
+Currently the plugin only works with solid borders, and will accept `inside` or `outside`.
 
+## Setup
+
+```bash
+npm install postcss-border-align --save-dev
+```
 
 [cli-img]: https://img.shields.io/travis/mindthetic/postcss-border-align.svg
 [cli-url]: https://travis-ci.org/mindthetic/postcss-border-align
