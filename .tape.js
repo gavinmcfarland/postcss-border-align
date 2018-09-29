@@ -13,7 +13,10 @@ module.exports = {
 		// 	message: 'supports alignment when padding is less than border width'
 		// },
 		'box-shadow': {
-			message: 'supports box-shadow method'
+			message: 'supports box-shadow method',
+			options: {
+				method: "box-shadow"
+			}
 		}
 	}
 };

@@ -4,47 +4,24 @@
 [![Build Status][cli-img]][cli-url]
 [![Support Chat][git-img]][git-url]
 
-[PostCSS Border Align] lets you do this in CSS.
+Allows you to create borders which do not affect the layout of the document.
 
 ```pcss
-.example {}
-
-/* becomes */
-
-.example {}
+.example {
+  border: outside 2px solid red;
+}
 ```
 
-## Usage
+Outputs:
 
-Add [PostCSS Border Align] to your project:
-
-```bash
-npm install postcss-border-align --save-dev
+```css
+.example {
+  box-shadow: inset 0 2px 0 0 red, inset -2px 0 0 0 red, inset 0 -2px 0 0 red, inset 2px 0 0 0 red;
+}
 ```
 
-Use [PostCSS Border Align] to process your CSS:
+Currently the plugin accepts `inside` and `outside` and only works with solid borders. There are some issues with outside where corners are not connected.
 
-```js
-const postcssBorderAlign = require('postcss-border-align');
-
-postcssBorderAlign.process(YOUR_CSS /*, processOptions, pluginOptions */);
-```
-
-Or use it as a [PostCSS] plugin:
-
-```js
-const postcss = require('postcss');
-const postcssBorderAlign = require('postcss-border-align');
-
-postcss([
-  postcssBorderAlign(/* pluginOptions */)
-]).process(YOUR_CSS /*, processOptions */);
-```
-
-[PostCSS Border Align] runs in all Node environments, with special instructions for:
-
-| [Node](INSTALL.md#node) | [PostCSS CLI](INSTALL.md#postcss-cli) | [Webpack](INSTALL.md#webpack) | [Create React App](INSTALL.md#create-react-app) | [Gulp](INSTALL.md#gulp) | [Grunt](INSTALL.md#grunt) |
-| --- | --- | --- | --- | --- | --- |
 
 [cli-img]: https://img.shields.io/travis/mindthetic/postcss-border-align.svg
 [cli-url]: https://travis-ci.org/mindthetic/postcss-border-align

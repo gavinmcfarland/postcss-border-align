@@ -7,9 +7,8 @@
 // @margin - only works with outside and means margin can't be overiden
 
 import postcss from "postcss";
-// import valueParser from 'postcss-value-parser';
-import { getBorderProperties } from "./get-border-properties";
-import { boxShadow } from "./techniques";
+import { getBorderProperties } from "./lib/get-border-properties";
+import { boxShadow } from "./lib/methods";
 
 // function boxShadowMethod(properties) {
 // 	var all = `${inset} 0 0 0 ${borderWidth} ${color}`
@@ -19,18 +18,21 @@ import { boxShadow } from "./techniques";
 // 	var left = `${inset} ${borderWidth} 0 0 0 ${color}`
 // }
 
-export default postcss.plugin("postcss-border-align", () => {
+export default postcss.plugin("postcss-border-align", (opts) => {
+	console.log('opts', opts);
+
   return root => {
+
     // Walk through each rule
     root.walkRules(rule => {
       // Creat properties of border object
       const border = getBorderProperties(rule);
 
       // Create string for new border
-      let newBorder = boxShadow(border);
+			let newBorder = boxShadow(border);
 
-      // Add new border as prop
-      rule.append({ prop: "box-shadow", value: newBorder });
+			// Add new border as prop
+			rule.append({ prop: "box-shadow", value: newBorder });
     });
   };
 });
