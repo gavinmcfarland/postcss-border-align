@@ -1,0 +1,9 @@
+.example-inside {
+  padding: 20px;
+  box-shadow: 0 40px 0 0 red, inset -10px 0 0 0 red, inset -10px 0 0 0 red, inset 0 -1px 0 0 red;
+}
+
+/* .example-outside {
+  border: outside 10px solid red;
+  padding: 20px;
+} */

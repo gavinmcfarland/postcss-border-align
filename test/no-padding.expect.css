@@ -1,0 +1,17 @@
+.example-inside {
+	border: 10px solid red;
+}
+
+.example-inside::before {
+	content: "";
+	display: block;
+	background-color: red;
+	margin-top: -10px;
+}
+
+.example-inside::after {
+	content: "";
+	display: block;
+	background-color: red;
+	margin-bottom: -10px;
+}

@@ -1,0 +1,16 @@
+.example-outside {
+	border: outside 10px solid red;
+	padding: 20px;
+}
+
+.example-outside {
+	border: outside 10px solid red;
+	padding: 20px;
+	width: 200px;
+}
+
+.example-outside {
+	border: outside 10px solid red;
+	padding: 20px;
+	width: 50%;
+}

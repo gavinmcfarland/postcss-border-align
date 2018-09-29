@@ -1,0 +1,28 @@
+.example-outside {
+	border: 10px solid red;
+	padding: 20px;
+	margin-top: -20px;
+	margin-right: -10px;
+	margin-left: -10px;
+	transform: translateY(10px);
+}
+
+.example-outside {
+	border: 10px solid red;
+	padding: 20px;
+	margin-top: -20px;
+	margin-right: -10px;
+	margin-left: -10px;
+	transform: translateY(10px);
+	width: 180px;
+}
+
+.example-outside {
+	border: 10px solid red;
+	padding: 20px;
+	margin-top: -20px;
+	margin-right: -10px;
+	margin-left: -10px;
+	transform: translateY(10px);
+	width: calc(50% - 20px);
+}

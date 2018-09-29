@@ -1,0 +1,4 @@
+.example-inside {
+	border: inside 10px solid red;
+	padding: 20px;
+}

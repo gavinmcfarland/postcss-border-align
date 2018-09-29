@@ -1,0 +1,12 @@
+.example-inside {
+  border: inside 10px solid red;
+  border-top: 40px outside;
+  border-width-left: 1px;
+  border-align-left: center;
+  padding: 20px;
+}
+
+/* .example-outside {
+  border: outside 10px solid red;
+  padding: 20px;
+} */
