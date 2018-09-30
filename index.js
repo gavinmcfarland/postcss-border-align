@@ -28,8 +28,6 @@ export default postcss.plugin("postcss-border-align", (opts) => {
       // Creat properties of border object
       const border = getBorderProperties(rule);
 
-			console.log(border);
-
 			if (border[2]) {
 				// Create string for new border
 				let newBorder = boxShadow(border);
