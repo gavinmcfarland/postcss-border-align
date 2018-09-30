@@ -28,11 +28,14 @@ export default postcss.plugin("postcss-border-align", (opts) => {
       // Creat properties of border object
       const border = getBorderProperties(rule);
 
-      // Create string for new border
-			let newBorder = boxShadow(border);
+			if (border[2]) {
+				// Create string for new border
+				let newBorder = boxShadow(border);
 
-			// Add new border as prop
-			rule.append({ prop: "box-shadow", value: newBorder });
+				// Add new border as prop
+				rule.append({ prop: "box-shadow", value: newBorder });
+			}
+
     });
   };
 });
