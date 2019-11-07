@@ -28,8 +28,8 @@ Currently the plugin only works with solid borders, and will accept `inside` or 
 npm install postcss-border-align --save-dev
 ```
 
-[cli-img]: https://img.shields.io/travis/mindthetic/postcss-border-align.svg
-[cli-url]: https://travis-ci.org/mindthetic/postcss-border-align
+[cli-img]: https://img.shields.io/travis/limitlessloop/postcss-border-align.svg
+[cli-url]: https://travis-ci.org/limitlessloop/postcss-border-align
 [git-img]: https://img.shields.io/badge/support-chat-blue.svg
 [git-url]: https://gitter.im/postcss/postcss
 [npm-img]: https://img.shields.io/npm/v/postcss-border-align.svg
